@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pabu"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:viewBindingIgnore="true">
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -123,7 +125,7 @@
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/mintaSidang"
                 android:layout_width="85dp"
                 android:layout_height="67dp"
                 android:layout_marginStart="36dp"
