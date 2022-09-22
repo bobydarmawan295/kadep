@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">kadep</string>
-    <string name ="username">Username</string>
-    <string name ="password">Password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="logo_unand">logo_unand</string>
     <string name="sidang">Sidang</string>
@@ -17,5 +17,12 @@
     <string name="ta">Permintaan TA</string>
     <string name="mahasiswa">Mahasiswa TA</string>
     <string name="profil">Profil</string>
+    <string name="penguji">Tetapkan Penguji</string>
+    <string name="detail_sidang">Detail Sidang</string>
+    <string name="detail_seminar">Detail Seminar</string>
+    <string name="detail_ta">Detail Tugas Akhir</string>
+    <string name="logbook_ta">Logbook Tugas Akhir</string>
+    <string name="peserta_seminar">Peserta Seminar</string>
+    <string name="permintaan_ta">Permintaan Tugas Akhir</string>
 
 </resources>

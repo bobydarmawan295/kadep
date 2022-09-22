@@ -13,9 +13,47 @@
         android:theme="@style/Theme.Kadep"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:name=".FormPengujiSeminar"
+            android:exported="false" />
+        <activity
+            android:name=".JadwalSidang"
+            android:exported="false" />
+        <activity
+            android:name=".PermintaanSidang"
+            android:exported="false" />
+        <activity
+            android:name=".JadwalSeminar"
+            android:exported="false" />
+        <activity
+            android:name=".PermintaanSeminar"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".PermintaanTA"
+            android:exported="false" />
+        <activity
+            android:name=".PesertaSeminar"
+            android:exported="false" />
+        <activity
+            android:name=".DetailTA"
+            android:exported="false" />
+        <activity
+            android:name=".DetailSeminar"
+            android:exported="false" />
+        <activity
+            android:name=".LogbookActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        </activity>
+        <activity
+            android:name=".DetailSidang"
+            android:exported="true"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -24,16 +62,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
         </activity>
     </application>
 
