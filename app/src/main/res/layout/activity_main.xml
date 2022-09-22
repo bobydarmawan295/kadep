@@ -28,9 +28,9 @@
                 android:layout_marginStart="52dp"
                 android:layout_marginBottom="6dp"
                 android:text="@string/halo"
-                android:textStyle="bold"
                 android:textColor="@color/white"
                 android:textSize="24sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/nama"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -62,15 +62,14 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="115dp"
-                android:layout_height="109dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="52dp"
-                android:contentDescription="@string/foto"
+                android:id="@+id/imageView5"
+                android:layout_width="144dp"
+                android:layout_height="110dp"
+                android:layout_marginEnd="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/photo" />
+                app:srcCompat="@drawable/foto" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -105,7 +104,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/jadwal"
+                android:id="@+id/jadwalSidang"
                 android:layout_width="85dp"
                 android:layout_height="67dp"
                 android:layout_marginStart="56dp"
@@ -114,8 +113,8 @@
                 android:drawableTop="@drawable/ic_jadwal"
                 android:paddingTop="7sp"
                 android:text="@string/jadwal"
-                android:textAllCaps="false"
 
+                android:textAllCaps="false"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -135,7 +134,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/jadwal"
+                app:layout_constraintStart_toEndOf="@+id/jadwalSidang"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -218,7 +217,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:itemIconSize="40sp"
-        app:menu="@menu/menu" />
+        app:menu="@menu/menu"
+        />
 
 
 

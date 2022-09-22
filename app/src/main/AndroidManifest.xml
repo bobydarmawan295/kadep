@@ -52,8 +52,9 @@
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
         <activity
             android:name=".DetailSidang"
-            android:exported="true" />
-<!--            android:parentActivityName=".LoginActivity" />-->
+            android:exported="true"
+            android:parentActivityName=".LoginActivity" />/>
+
         <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"

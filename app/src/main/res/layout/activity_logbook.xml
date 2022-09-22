@@ -52,7 +52,12 @@
                 android:layout_marginRight="30sp"
                 android:layout_marginBottom="15sp"
                 android:background="@drawable/roundstyle"
-                android:backgroundTint="@color/bmuda" />
+                android:backgroundTint="@color/bmuda" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="350sp"
