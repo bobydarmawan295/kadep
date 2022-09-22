@@ -5,18 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-
+import com.example.kadep.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ActivityMainBinding binding;
     private boolean isLoggedIn = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
         Intent mainIntent = getIntent();
         String username = mainIntent.getStringExtra("USERNAME");
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
 
-        mainIntent.setText("Hello, " + username);
+        binding.nama.setText(username);
 
     }
 }

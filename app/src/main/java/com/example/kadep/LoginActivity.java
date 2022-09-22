@@ -4,58 +4,48 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.kadep.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btnLogin;
-    TextView btn;
-    EditText editUsername,editPassword;
+    private ActivityLoginBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-        setupUI();
-        setupListeners();
-
-
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
     }
 
-    private void setupUI() {
-        editUsername = (EditText) findViewById(R.id.editUsername);
-        editPassword = (EditText) findViewById(R.id.editPassword);
-        btnLogin = findViewById(R.id.login);
-    }
+    public void onButtonLoginClicked(View view) {
+        //Explicit Intent
+        String username = binding.editUsername.getText().toString();
+        String password = binding.editPassword.getText().toString();
 
-    private void setupListeners() {
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkUsername();
-            }
-        });
-
-    }
-
-    void checkUsername(){
-        boolean valid=true;
-        if(valid){
-            String username = editUsername.getEditableText().toString();
-            String password = editPassword.getEditableText().toString();
-            if(password.equals("yeyjadi")){
-                Intent LoginIntent = new Intent(this, MainActivity.class);
-                LoginIntent.putExtra("username",username);
-                LoginIntent.putExtra("cek_login",true);
-                startActivity(LoginIntent);
-            }else if(password.isEmpty()){
-                Toast.makeText(this,"Yah Gagal",Toast.LENGTH_SHORT).show();
-            }
+        if(password.equals("123")){
+            Intent mainIntent = new Intent(this, MainActivity.class);
+            mainIntent.putExtra("USERNAME", username);
+            mainIntent.putExtra("IS_LOGGED_IN", true);
+            startActivity(mainIntent);
+        }else{
+            Toast.makeText(this, "Kombinasi username dan password salah", Toast.LENGTH_SHORT).show();
         }
-    };
+    }
+
+    public void onForgotPasswordClicked(View view) {
+        //Implicit Intent
+        Intent callIntent = new Intent();
+        callIntent.setAction(Intent.ACTION_SEND);
+        callIntent.setType("text/plain");
+        callIntent.putExtra(Intent.EXTRA_TEXT, "Halo saya lupa password");
+        if(callIntent.resolveActivity(getPackageManager()) != null){
+            startActivity(callIntent);
+        }else{
+            Toast.makeText(this, "Activity tidak tersedia", Toast.LENGTH_SHORT).show();
+        }
+    }
 }

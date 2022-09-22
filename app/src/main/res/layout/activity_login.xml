@@ -65,6 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:background="@color/tosca"
+        android:onClick="onButtonLoginClicked"
         android:text="@string/login"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
