@@ -7,6 +7,15 @@
     <string name="sidang">Sidang</string>
     <string name="seminar">Seminar</string>
     <string name="jadwal">Jadwal</string>
-    <string name="permintaan">permintaan</string>
+    <string name="permintaan">Permintaan</string>
+    <string name="halo">Halo</string>
+    <string name="nama">nama</string>
+    <string name="kabar">Bagaimana kabar anda?</string>
+    <string name="foto">foto</string>
+    <string name="seminat">Seminar</string>
+    <string name="home">Home</string>
+    <string name="ta">Permintaan TA</string>
+    <string name="mahasiswa">Mahasiswa TA</string>
+    <string name="profil">Profil</string>
 
 </resources>
