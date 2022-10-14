@@ -1,4 +1,4 @@
-Repository Untuk Pengumpulan Project Tugas Besar Mata Kuliah Pemograman Teknologi Bergerak
+Repository Untuk Pengumpulan Project Tugas Besar Mata Kuliah Pemograman Teknologi Bergerak.
 
 Kelompok 2
 Project Mobile App untuk mengelola Tugas Akhir yang ditujukan untuk user Kaprodi
