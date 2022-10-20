@@ -35,11 +35,11 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="376dp"
-        android:layout_height="489dp"
+        android:layout_width="348dp"
+        android:layout_height="477dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
